@@ -1,0 +1,61 @@
+* {
+  font-family: Arial, Tahoma;
+  box-sizing: border-box;
+}
+span {
+  display: block;
+  background-color: red;
+  color: #fff;
+  padding: 30px 20px;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 370px;
+  margin: 250px auto 0;
+  position:relative;
+}
+span:before {
+  content: "This Is Tooltip Content";
+  position: absolute;
+  bottom: 150px;
+  left: -65px;
+  width: 500px;
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100px;
+  opacity: 0;
+}
+span:after {
+  content: '';
+  position: absolute;
+  bottom: 130px;
+  left: 155px;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #000;
+  opacity: 0;
+}
+span:hover::before,
+span:hover::after {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}

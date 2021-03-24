@@ -1,0 +1,100 @@
+* {
+  font-family: Arial, Tahoma;
+  box-sizing: border-box;
+}
+.container {
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+form {
+  overflow: hidden;
+  display: block;
+  text-align: left;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+form .left {
+  float: left;
+  width: 50%;
+}
+form .left label {
+  position: relative;
+}
+form .left label:after {
+  content: "*";
+  color: #f00;
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+form .left label:last-of-type:after {
+  content: "*";
+  color: #f00;
+  position: absolute;
+  top: 0;
+  left: 46px;
+}
+form .right {
+  float: right;
+  width: 50%;
+}
+form .right label,
+form .right input,
+textarea {
+  margin-left: 20px;
+}
+label,
+input,
+textarea,
+button {
+  display: block;
+  margin-bottom: 5px;
+}
+label {
+  font-weight: bold;
+}
+input,
+textarea {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 95%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+input::placeholder {
+  color: #888;
+}
+textarea {
+  min-height: 116px;
+  resize: none;
+}
+button {
+  width: 100%;
+  background-color: #009688;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
