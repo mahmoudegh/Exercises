@@ -1,0 +1,113 @@
+* {
+  font-family: Arial, Tahoma;
+  box-sizing: border-box;
+}
+.container {
+  margin: 5% auto;
+  width: 70%;
+  background-color: #fff;
+  padding: 0.2%;
+  border: 1px solid #20bfa9;
+}
+.container .box-container {
+  background-color: #20bfa9;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.container .box-container::before {
+  content: '';
+  height: 345px;
+  width: 2px;
+  background-color: #fff;
+  position: absolute;
+}
+.container .box-container::after {
+  content: 'OR';
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #20bfa9;
+  position: absolute;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container .box-container .box {
+  width: 40%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #fff;
+  margin: 5%;
+  min-height: 345px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    top,
+    #000,
+    #000 40%,
+    transparent 0%,
+    transparent 0%
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    #000,
+    #000 40%,
+    transparent 0%,
+    transparent 0%
+  );
+}
+.container .box-container .box h2 span {
+  color: #20bfa9;
+}
+.container .box-container .box .card {
+  color: #000;
+  background-color: #fff;
+  position: absolute;
+  top: 21%;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.container .box-container .box .card ul {
+  text-align: left;
+}
+.container .box-container .box .card ul li {
+  margin-bottom: 5%;
+}
+.container .box-container .box .card ul li::marker {
+  color: #f73859;
+  font-size: 25px;
+}
+.container .box-container .box .card button {
+  background-color: #f73859;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 30px;
+  margin-bottom: 10%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .box-container .box .card button:focus {
+  outline: none;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
