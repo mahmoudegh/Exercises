@@ -43,7 +43,7 @@
   border-radius: 10px;
   color: #fff;
   margin: 5%;
-  min-height: 345px;
+  height: 345px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -77,6 +77,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
 .container .box-container .box .card ul {
   margin: 0;
@@ -106,12 +110,48 @@
   border-radius: 5px;
   border: none;
   padding: 10px 30px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   text-align: center;
   width: 80%;
   margin: 20px auto 30px;
 }
+/* @media only screen and (max-width: 552px) {
+  .container .box-container .box .card ul li {
+    font-size: 13px;
+  }
+  .container .box-container .box .card ul li:last-of-type {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .container .box-container .box .card ul li:not(:last-of-type)::before {
+    height: 7px;
+    width: 7px;
+    top: 5px;
+  }
+  .container .box-container .box .card h3 {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 553px) and (max-width: 828px) {
+  .container .box-container .box .card ul li {
+    font-size: 14px;
+  }
+  .container .box-container .box .card ul li:last-of-type {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 5px auto 5px;
+  }
+  .container .box-container .box .card ul li:not(:last-of-type)::before {
+    height: 7px;
+    width: 7px;
+    top: 7px;
+  }
+  .container .box-container .box .card h3 {
+    font-size: 1em;
+  }
+} */
 .vid-link {
   background-color: #ccc;
   text-align: center;
