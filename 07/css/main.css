@@ -25,7 +25,7 @@
 .container .main-ult {
   background-color: #fff;
   color: #545454;
-  border: 1px solid #ccc;
+  border-color: #ccc;
 }
 .container .main-pro .frame,
 .container .main-ult .frame {
