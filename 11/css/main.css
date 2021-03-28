@@ -6,14 +6,14 @@
   border: 1px solid #ccc;
   background-color: #fff;
   padding: 3px;
-  width: 80%;
+  width: 80vw;
   margin: 0 auto;
 }
 .seconde-container {
   background-image: url("../imgs/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 40vw;
   position: relative;
 }
 .seconde-container .setting {
