@@ -1,0 +1,97 @@
+* {
+  font-family: Arial, Tahoma;
+  font-size: 1vw;
+  box-sizing: border-box;
+}
+.first-container {
+  border: 1px solid #0eaaa6;
+  background-color: #fff;
+  padding: 3px;
+  width: 70vw;
+  margin: 10% auto;
+}
+.seconde-container {
+  width: 100%;
+}
+.seconde-container .input-fields form {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  padding: 2% 3%;
+  justify-content: space-between;
+}
+.seconde-container .input-fields form input,
+.seconde-container .input-fields form select {
+  border: none;
+  outline: none;
+  padding: 1%;
+  border-radius: 2px;
+}
+.seconde-container .input-fields form input::placeholder {
+  color: #b3b599;
+}
+.seconde-container .input-fields form select:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid #000;
+  border-right: 5px solid red;
+  border-top: 5px solid blue;
+  border-bottom: 5px solid yellow;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.seconde-container .input-fields form span {
+  padding-left: 1%;
+  border-radius: 2px;
+  background-color: #f7f7f7;
+  border-right: 1px solid #dfdfdf;
+  color: #333;
+  text-align: center;
+  line-height: 35px;
+  display: flex;
+}
+.seconde-container .input-fields form span input {
+  margin-left: 5%;
+  padding-left: 5%;
+  width: 100%;
+}
+.seconde-container .input-fields form input[type="submit"] {
+  background-color: #0eaaa6;
+  color: #fff;
+  padding-left: 2%;
+  padding-right: 2%;
+  cursor: pointer;
+}
+.seconde-container .slogon {
+  text-align: center;
+  background-color: #0eaaa6;
+  color: #fff;
+  padding: 3% 0;
+}
+.seconde-container .slogon h1,
+.seconde-container .slogon p {
+  margin: 0;
+  padding: 0;
+}
+.seconde-container .slogon h1 {
+  margin-bottom: 2%;
+  font-weight: 100;
+}
+.seconde-container .slogon p {
+  font-style: italic;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
