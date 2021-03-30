@@ -1,0 +1,207 @@
+* {
+  font-family: Arial, Tahoma;
+  font-size: 1vw;
+  box-sizing: border-box;
+}
+.first-container {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 3px;
+  width: 80vw;
+  margin: 10% auto;
+}
+.seconde-container {
+  width: 100%;
+  padding: 15% 10%;
+  background: linear-gradient(#f5f4fb, #f5f4fb), linear-gradient(#3729b2, #3729b2);
+  background-size: 36.5% 100%, 63.5% 100%;
+  background-position: 0%, 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seconde-container .circle {
+  width: 11vw;
+  height: 11vw;
+  background-color: #0fd99a;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-35%, -35%);
+}
+.third-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.third-container .first-box {
+  width: 33.3%;
+  background-color: #3729b2;
+  z-index: 1;
+  padding: 4%;
+  position: relative;
+}
+.third-container .first-box .logo {
+  width: 2.8vw;
+  height: 2.8vw;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #3729b2;
+  font-size: 2vw;
+  font-weight: 900;
+  letter-spacing: -5px;
+  margin-bottom: 15%;
+  transform: rotate(-85deg);
+}
+.third-container .first-box ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.third-container .first-box ul li {
+  color: #978fd6;
+  line-height: 2.5;
+  cursor: pointer;
+}
+.third-container .first-box ul li:last-of-type {
+  background-color: #4d40b9;
+  border-radius: 5px;
+  padding: 0 6%;
+  margin-left: -6%;
+  margin-top: 2%;
+  width: 50%;
+}
+.third-container .first-box .need-more {
+  position: absolute;
+  bottom: 5%;
+  width: 80%;
+}
+.third-container .first-box .need-more p:first-of-type {
+  color: #6a5fc4;
+  margin-bottom: 0;
+  font-size: 1vw;
+}
+.third-container .first-box .need-more h2 {
+  color: #fff;
+  margin-top: 2%;
+  font-size: 1.6vw;
+}
+.third-container .first-box .need-more p:nth-of-type(2) {
+  color: #857dcf;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.third-container .first-box .need-more p:last-of-type {
+  color: #fff;
+}
+.third-container .second-box {
+  width: 33.3%;
+  background-color: #fff;
+  padding: 4%;
+}
+.third-container .second-box h1 {
+  color: #6e6e6e;
+  font-weight: lighter;
+}
+.third-container .second-box p {
+  color: #c0c0c0;
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+.third-container .second-box input,
+.third-container .second-box textarea {
+  width: 100%;
+  margin-bottom: 5%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ececec;
+  padding: 7%;
+  color: #7c7c7c;
+  font-weight: bold;
+}
+.third-container .second-box textarea {
+  resize: none;
+  height: 12vw;
+}
+.third-container .second-box input:focus,
+.third-container .second-box textarea:focus {
+  border-bottom: 2px solid #cdcdcd;
+}
+.third-container .second-box input::placeholder,
+.third-container .second-box textarea::placeholder {
+  color: #b2b2b2;
+}
+.third-container .second-box i {
+  color: #4d40b9;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.third-container .second-box span {
+  line-height: 3;
+  font-weight: bold;
+  font-size: 1.2vw;
+  color: #4d40b9;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.third-container .third-box {
+  width: 33.4%;
+  background-color: #fff;
+  position: relative;
+  padding: 4%;
+}
+.third-container .third-box .para {
+  margin-top: 70%;
+}
+.third-container .third-box p {
+  line-height: 1.5;
+}
+.third-container .third-box p:first-of-type {
+  font-weight: 800;
+}
+.third-container .third-box p:nth-of-type(2) {
+  color: #9fa0a0;
+  font-size: 0.7vw;
+  margin-bottom: 9%;
+}
+.third-container .third-box p:nth-of-type(3),
+.third-container .third-box p:last-of-type {
+  color: #b7b2e2;
+  font-size: 0.7vw;
+}
+.third-container .third-box .photo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 30%;
+  width: 30%;
+}
+.third-container .third-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid #0fd99a;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid #0fd99a;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}

@@ -95,10 +95,7 @@
   align-items: center;
 }
 .seconde-container .setting .lap .mobile i {
-  border: 2px solid #fff;
-  border-radius: 5px;
-  background-color: #fff;
-  border-top: 10px solid #fff;
+  color: #fff;
 }
 .seconde-container .setting .lap .mobile .responsive {
   background-color: #fff;
