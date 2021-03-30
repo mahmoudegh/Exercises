@@ -1,0 +1,148 @@
+* {
+  font-family: Arial, Tahoma;
+  font-size: 1vw;
+  box-sizing: border-box;
+}
+p,
+h1,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+.first-container {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 3px;
+  width: 90vw;
+  margin: 10% auto;
+}
+.seconde-container {
+  padding: 2%;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+}
+.seconde-container .box {
+  width: 32%;
+}
+.seconde-container .box .photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.seconde-container .box .photo .featured {
+  color: #fff;
+  background-color: #ea723d;
+  font-weight: 500;
+  padding: 1% 2%;
+  position: absolute;
+  left: 0;
+  top: -11px;
+}
+.seconde-container .box .photo .icons {
+  color: #fff;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+.seconde-container .box .photo i {
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+.seconde-container .box .photo .hot {
+  color: #fff;
+  background-color: #dd3333;
+  font-weight: bold;
+  padding: 1% 2%;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+.seconde-container .box .photo:hover:after {
+  content: "View Property";
+  color: #fff;
+  font-weight: bold;
+  padding: 3%;
+  position: absolute;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.seconde-container .box .photo:hover:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 166, 183, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.seconde-container .box .photo img {
+  width: 100%;
+}
+.seconde-container .box .desc {
+  background-color: #fff;
+  padding: 7% 5%;
+}
+.seconde-container .box .desc h1 {
+  color: #24282b;
+  margin-bottom: 5%;
+  font-weight: 500;
+}
+.seconde-container .box .desc p:first-of-type {
+  color: #9a999c;
+  font-weight: 500;
+  font-size: 0.9vw;
+  margin-bottom: 5%;
+  line-height: 1.5;
+}
+.seconde-container .box .desc .rooms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.seconde-container .box .desc h6 {
+  color: #53504b;
+  font-size: 0.8vw;
+  font-weight: 700;
+}
+.seconde-container .box .desc .rooms .area {
+  width: 50%;
+}
+.seconde-container .box .desc .rooms i {
+  font-size: 1.5vw;
+  color: #bcbcbc;
+  transform: rotateY(180deg);
+  line-height: 2.2;
+}
+.seconde-container .box .desc .rooms span {
+  color: #535660;
+  font-size: 1.1vw;
+  font-weight: bold;
+  margin-left: 7px;
+}
+.seconde-container .box .desc .rooms .area span span {
+  color: #bcbcbc;
+  margin-left: 0;
+  font-size: 0.9vw;
+}
+.seconde-container .box .desc p:last-of-type {
+  color: #40b0aa;
+  font-weight: 500;
+  font-size: 1.5vw;
+  margin-top: 1%;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
