@@ -31,6 +31,7 @@ h6 {
   justify-content: center;
   align-items: center;
   position: relative;
+  transition: 2s;
 }
 .seconde-container .box .photo .featured {
   color: #fff;
@@ -41,9 +42,9 @@ h6 {
   left: 0;
   top: 0;
   transform: translateY(-50%);
-  -o-clip-path: polygon(0 100%, 0 0, 80% 0, 100% 50%, 80% 100%);
-  -moz-clip-path: polygon(0 100%, 0 0, 80% 0, 100% 50%, 80% 100%);
   -webkit-clip-path: polygon(0 100%, 0 0, 80% 0, 100% 50%, 80% 100%);
+  -moz-clip-path: polygon(0 100%, 0 0, 80% 0, 100% 50%, 80% 100%);
+  -o-clip-path: polygon(0 100%, 0 0, 80% 0, 100% 50%, 80% 100%);
   clip-path: polygon(0 100%, 0 0, 80% 0, 100% 50%, 80% 100%);
 }
 .seconde-container .box .photo .icons {
@@ -73,25 +74,23 @@ h6 {
   position: absolute;
   border: 1px solid #fff;
   cursor: pointer;
-  opacity: 0;
-  transition: 2s ease-in-out;
 }
-.seconde-container .box .photo:hover:after {
+/* .seconde-container .box .photo:hover:after {
   opacity: 1;
-}
+} */
 .seconde-container .box .photo:hover:before {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(22, 166, 183, 0);
+  background-color: rgba(22, 166, 183, 0.4);
   position: absolute;
   top: 0;
   left: 0;
-  transition: 2s ease-in-out;
+  transition: 2s;
 }
-.seconde-container .box .photo:hover:before {
+/* .seconde-container .box .photo:hover:before {
   background-color: rgba(22, 166, 183, 0.4);
-}
+} */
 .seconde-container .box .photo img {
   width: 100%;
 }
