@@ -23,7 +23,7 @@
           </div>
           <div class="desc">
             <h1>Home in Merrick Way</h1>
-            <p>Enchanting three bedroom, three bath home with spacious one bedroom, one bath...</p>
+            <p class="autoShowHide">Enchanting three bedroom, three bath home with spacious one bedroom, one bath ABC</p>
             <div class="rooms">
               <div class="bedrooms">
                 <h6>Bedrooms</h6>
@@ -57,7 +57,7 @@
           </div>
           <div class="desc">
             <h1>Home in Merrick Way</h1>
-            <p>Enchanting three bedroom, three bath home with spacious one bedroom, one bath...</p>
+            <p class="autoShowHide">Enchanting three bedroom, three bath home with spacious one bedroom, one bath.Enchanting three bedroom, three bath home with spacious one bedroom, one bath.Enchanting three bedroom, three bath home with spacious one bedroom, one bath.</p>
             <div class="rooms">
               <div class="bedrooms">
                 <h6>Bedrooms</h6>
@@ -90,7 +90,7 @@
           </div>
           <div class="desc">
             <h1>Home in Merrick Way</h1>
-            <p>Enchanting three bedroom, three bath home with spacious one bedroom, one bath...</p>
+            <p class="autoShowHide">Enchanting three bedroom, three bath home with spacious one bedroom, one bath.Enchanting three bedroom, three bath home with spacious one bedroom, one bath.</p>
             <div class="rooms">
               <div class="bedrooms">
                 <h6>Bedrooms</h6>
@@ -117,5 +117,23 @@
     <div class="vid-link">
       <a href="https://elzero.org/frontend-real-estate-cards/" target="blank">Link Of Exercise</a>
     </div>
+    <!-- <script>
+      var paragraph = document.querySelectorAll(".cut");
+      for (let i = 0; i < paragraph.length; i++) {
+        var oldParagraph = paragraph[i].textContent;
+        // console.log(oldParagraph);
+        // for (let x = 0; x < oldParagraph.length; x++) {
+        //   paragraph[i].onclick = function () {
+        //     paragraph[i].innerHTML = oldParagraph[x];
+        //   };
+        
+        // oldParagraph.push(paragraph[i].textContent);
+        // console.log(oldParagraph);
+        // console.log(paragraph[i].textContent);
+        if (paragraph[i].textContent.length > 80) {
+          paragraph[i].innerHTML = paragraph[i].textContent.substring(0, 80) + " ...";
+        }
+      }
+    </script> -->
   </body>
 </html>
