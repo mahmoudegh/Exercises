@@ -1,0 +1,211 @@
+* {
+  font-family: Arial, Tahoma;
+  font-size: 1vw;
+  box-sizing: border-box;
+}
+.first-container {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 2px;
+  width: 90vw;
+  margin: 1% auto;
+}
+.seconde-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 20vw;
+  position: relative;
+}
+.seconde-container .latest-post {
+  width: 58%;
+  height: 68.4%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #565a60;
+  z-index: 9;
+}
+.seconde-container .latest-post ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 10%;
+  padding-left: 2%;
+}
+.seconde-container .latest-post ul li {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1%;
+}
+.seconde-container .latest-post ul li i {
+  margin-right: 1%;
+  font-size: 1.5vw;
+  line-height: 1.3;
+  color: #999;
+}
+.seconde-container .latest-post ul li h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.8vw;
+  color: #cccdcf;
+}
+.seconde-container .latest-post ul li span {
+  font-size: 0.7vw;
+  color: #999;
+}
+.seconde-container .contact-us {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ff5722;
+  opacity: 0.5;
+  z-index: 10;
+}
+.seconde-container .contact-us ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 21%;
+  list-style: none;
+  margin-left: 5%;
+  color: #fff;
+}
+.seconde-container .contact-us ul li {
+  margin-bottom: 5%;
+}
+.seconde-container .contact-us ul li i {
+  margin-right: 2%;
+}
+.seconde-container .contact-info {
+  color: #fff;
+  background-color: #ff5722;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  width: 30%;
+  padding: 1.5%;
+}
+.seconde-container .late {
+  color: #fff;
+  background-color: #ff5722;
+  position: absolute;
+  top: 0;
+  left: 42%;
+  z-index: 11;
+  width: 12%;
+  padding: 1.5%;
+}
+.seconde-container .empty-two {
+  color: #fff;
+  background-color: #dfdfdf;
+  position: absolute;
+  top: 0;
+  left: 54%;
+  z-index: 11;
+  width: 16%;
+  padding: 2.12%;
+}
+.seconde-container .upper {
+  width: 100%;
+  height: 35%;
+  background-color: #dfdfdf;
+}
+.seconde-container .upper .third-container {
+  height: 100%;
+}
+.seconde-container .upper .third-container .logo {
+  width: 40%;
+  display: flex;
+  height: 100%;
+}
+.seconde-container .upper .third-container .logo .your-logo {
+  background-color: #27282a;
+  color: #dfdfdf;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5%;
+}
+.seconde-container .upper .third-container .logo .empty {
+  width: 75%;
+}
+.third-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.seconde-container .lower {
+  width: 100%;
+  height: 65%;
+  background-color: #27282a;
+  display: flex;
+  align-items: flex-end;
+}
+.seconde-container .lower .third-container .fourth-container {
+  width: 32%;
+  height: 33.5%;
+  background-color: #ff5722;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.seconde-container .lower .third-container .fourth-container ul {
+  margin-left: 5%;
+}
+.seconde-container .lower .third-container .fourth-container ul li {
+  height: 2.5vw;
+  width: 2.5vw;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.seconde-container .lower .third-container .fourth-container ul li i {
+  color: #fff;
+}
+
+.seconde-container .lower .third-container {
+  display: flex;
+  justify-content: space-between;
+}
+.seconde-container .lower .third-container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #707071;
+  width: 40%;
+  margin: 3% 0;
+}
+.seconde-container .lower .third-container ul li {
+  letter-spacing: -1px;
+}
+.seconde-container .lower .third-container p {
+  margin: 3% 0;
+  color: #707071;
+}
+.seconde-container .lower .third-container p span {
+  color: #ff5722;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
