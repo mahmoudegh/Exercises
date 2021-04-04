@@ -1,0 +1,201 @@
+* {
+  font-family: Arial, Tahoma;
+  font-size: 1vw;
+  box-sizing: border-box;
+}
+.container {
+  width: 86vw;
+  margin: 1% auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .header h1,
+.container .header p,
+.container .header i {
+  width: 100%;
+  text-align: center;
+}
+.container .header h1 {
+  color: #a3a3a3;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.container .header p {
+  color: #b3bcc3;
+  margin-bottom: 6%;
+}
+.container .header i {
+  color: #7e8d99;
+  font-size: 2vw;
+}
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .content .left,
+.container .content .middle,
+.container .content .right {
+  width: 33%;
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .content .photo-box {
+  width: 13vw;
+  height: 13vw;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 2%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 7%;
+  position: relative;
+}
+.container .content .photo-box:after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.container .content .photo-box:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 11px solid #ccc;
+  border-bottom: 11px solid transparent;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+}
+.container .content .photo-box img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+}
+.container .content .name {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10%;
+}
+.container .content .name p {
+  color: #f1697d;
+  font-size: 3vw;
+}
+.container .content .name p:first-of-type {
+  margin-bottom: 0;
+}
+.container .content .name p:last-of-type {
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+.container .content .name span {
+  color: #9da9b2;
+  font-weight: bold;
+  font-size: 0.8vw;
+  background-color: #fff;
+  transform: translateY(50%);
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+}
+.container .content .social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.container .content .social-icons i {
+  color: #dfdee3;
+  font-size: 1.5vw;
+}
+.container .content .paragraph p {
+  color: #707070;
+  font-weight: bold;
+  line-height: 1.7;
+}
+.container .content .middle .top,
+.container .content .middle .intermediate,
+.container .content .middle .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container .content .middle .top .days,
+.container .content .middle .top .hours,
+.container .content .middle .bottom .minutes,
+.container .content .middle .bottom .seconds {
+  width: 40%;
+  border: 1px solid #ccc;
+}
+.container .content .middle .top,
+.container .content .middle .bottom {
+  height: 42%;
+}
+.container .content .middle .days,
+.container .content .middle .hours,
+.container .content .middle .minutes,
+.container .content .middle .seconds {
+  padding: 0 5%;
+}
+.container .content .middle .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  color: #f05f75;
+  border-bottom: 1px solid #ccc;
+  height: 60%;
+}
+.container .content .middle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3vw;
+  color: #8d8d8d;
+  height: 40%;
+  font-weight: 500;
+}
+.container .content .middle .intermediate {
+  justify-content: center;
+  align-items: center;
+  height: 16%;
+}
+.container .content .middle .intermediate p {
+  color: #9c9c9c;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+.container .content .middle {
+  height: 80%;
+  padding-top: 5%;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
