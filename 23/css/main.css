@@ -1,0 +1,117 @@
+* {
+  font-family: Arial, Tahoma;
+  font-size: 1vw;
+  box-sizing: border-box;
+}
+.outline {
+  width: 75vw;
+  margin: 1% auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 0.3%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #e8f4fc;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 5% 8%;
+}
+.container .box {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.container .box:nth-of-type(2) {
+  transform: translateY(5%);
+}
+.container .box:last-of-type {
+  transform: translateY(10%);
+}
+.container .box::before {
+  content: "";
+  position: absolute;
+  left: -2%;
+  bottom: 75%;
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid #0a947a;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #0a947a;
+}
+.container .box .price,
+.container .box ul {
+  width: 100%;
+}
+.container .box .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 10% 35%;
+}
+.container .box .price span:first-of-type {
+  font-size: 2vw;
+}
+.container .box .price span:last-of-type {
+  font-size: 3vw;
+  color: #404054;
+  margin-top: 10%;
+}
+.container .box .category {
+  background-color: #13c8a6;
+  color: #fff;
+  width: 50%;
+  padding: 4%;
+  border-radius: 0 20px 20px 0;
+  font-size: 1.5vw;
+  text-align: center;
+  position: absolute;
+  left: -2%;
+  top: 25%;
+}
+.container .box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .box ul li {
+  width: 100%;
+  text-align: center;
+  color: #5f5f70;
+  margin-bottom: 5%;
+  font-weight: bold;
+  padding: 2%;
+}
+.container .box button {
+  background-color: #13c8a6;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4% 3%;
+  width: 45%;
+  margin: 5% 0 15%;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
