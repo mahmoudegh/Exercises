@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="outline">
+      <div class="container">
+        <input class="array" type="text" placeholder="Array" />
+        <input class="number" type="number" placeholder="Number" />
+        <button class="btn" onclick="checkPrevNext();">Check</button>
+        <div class="result"></div>
+      </div>
+    </div>
+    <div class="vid-link">
+      <a href="https://elzero.org/javascript-previous-and-next-number-in-array/" target="blank">Link Of Exercise</a>
+    </div>
+    <script>
+      function checkPrevNext(array, number) {
+        var array = document.querySelector(".array");
+        var number = document.querySelector(".number");
+        var result = document.querySelector(".result");
+        if (
+          array.value.includes(parseInt(number.value) + 1) !== false &&
+          array.value.includes(parseInt(number.value) - 1) !== false
+        ) {
+          result.innerHTML = `Founded, The Given Number Is ${number.value} & The Previous Number Is ${
+            parseInt(number.value) - 1
+          } & The Next Number Is ${parseInt(number.value) + 1}`;
+        } else {
+          result.innerHTML = `Not Founded`;
+        }
+      }
+    </script>
+  </body>
+</html>
