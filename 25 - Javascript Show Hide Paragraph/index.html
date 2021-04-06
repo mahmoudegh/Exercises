@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="outline">
+      <div class="container">
+        <button class="button" onclick="showHideText()">Hide</button>
+        <p class="para">This Is My Paragraph</p>
+      </div>
+    </div>
+    <div class="vid-link">
+      <a href="https://elzero.org/algorithm-task-add-zeros-before-number/" target="blank">Link Of Exercise</a>
+    </div>
+    <script>
+      function showHideText() {
+        var text = document.querySelector(".para"),
+          button = document.querySelector(".button");
+        text.classList.toggle("hide");
+        if (button.innerHTML === "Hide") {
+          button.innerHTML = "Show";
+        } else {
+          button.innerHTML = "Hide";
+        }
+      }
+    </script>
+  </body>
+</html>
