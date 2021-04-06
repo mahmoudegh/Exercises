@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="outline">
+      <div class="container">
+        <input class="input" type="text" />
+        <button class="button">Add</button>
+        <span class="result"></span>
+      </div>
+    </div>
+    <div class="vid-link">
+      <a href="https://elzero.org/algorithm-task-add-zeros-before-number/" target="blank">Link Of Exercise</a>
+    </div>
+    <script>
+      var number = document.querySelector(".input");
+      var button = document.querySelector(".button");
+      var result = document.querySelector(".result");
+      button.onclick = function () {
+        if (number.value < 10) {
+          result.innerHTML = "000" + number.value;
+        } else if (number.value > 9 && number.value < 100) {
+          result.innerHTML = "00" + number.value;
+        } else if (number.value > 99 && number.value < 1000) {
+          result.innerHTML = "0" + number.value;
+        } else {
+          result.innerHTML = number.value;
+        }
+      };
+    </script>
+  </body>
+</html>
