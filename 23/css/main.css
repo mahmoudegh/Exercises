@@ -12,7 +12,6 @@
 }
 .container {
   width: 100%;
-  height: 100%;
   background-color: #e8f4fc;
   display: flex;
   justify-content: space-between;
@@ -45,6 +44,14 @@
   border-left: 3px solid transparent;
   border-right: 3px solid #0a947a;
 }
+.container .box:nth-of-type(2):before {
+  border-bottom: 3px solid #d6b031;
+  border-right: 3px solid #d6b031;
+}
+.container .box:last-of-type:before {
+  border-bottom: 3px solid #273077;
+  border-right: 3px solid #273077;
+}
 .container .box .price,
 .container .box ul {
   width: 100%;
@@ -75,6 +82,12 @@
   left: -2%;
   top: 25%;
 }
+.container .box:nth-of-type(2) .category {
+  background-color: #efcb53;
+}
+.container .box:last-of-type .category {
+  background-color: #555fae;
+}
 .container .box ul {
   list-style: none;
   padding: 0;
@@ -101,6 +114,37 @@
   padding: 4% 3%;
   width: 45%;
   margin: 5% 0 15%;
+}
+.container .box:nth-of-type(2) button {
+  background-color: #efcb53;
+}
+.container .box:last-of-type button {
+  background-color: #555fae;
+}
+@media (max-width: 700px) {
+  * {
+    font-size: 2.5vw;
+  }
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5% 5% 15%;
+  }
+  .container .box {
+    width: 60%;
+  }
+  .container .box button {
+    width: 50%;
+  }
+  .container .box .price span:last-of-type {
+    font-size: 7vw;
+  }
+  .container .box .price span:first-of-type {
+    font-size: 5vw;
+  }
+  .container .box .category {
+    font-size: 3vw;
+  }
 }
 .vid-link {
   background-color: #ccc;
