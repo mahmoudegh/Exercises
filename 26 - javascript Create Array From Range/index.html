@@ -27,13 +27,23 @@
         var result = document.querySelector(".result");
         var arr = [];
 
-        while (parseInt(start) < parseInt(end)) {
+        // Increasing Array
+        for (let index = parseInt(start); index <= parseInt(end) - 1; index++) {
           arr.push(start++);
         }
 
-        while (parseInt(start) > parseInt(end) - 1) {
+        // Decreasing Array
+        for (let index = parseInt(start); index >= parseInt(end); index--) {
           arr.push(start--);
         }
+
+        // while (parseInt(start) < parseInt(end)) {
+        //   arr.push(start++);
+        // }
+
+        // while (parseInt(start) > parseInt(end) - 1) {
+        //   arr.push(start--);
+        // }
         result.innerHTML = "[" + arr + "]";
       }
     </script>
