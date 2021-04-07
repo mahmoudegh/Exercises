@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="outline">
+      <div class="container">
+        <input class="my-array" type="text" placeholder="Multicharacter Array" />
+        <button class="btn" onclick="getSmallestNumber();">Get The Smallest Number</button>
+        <div class="result"></div>
+      </div>
+    </div>
+    <div class="vid-link">
+      <a href="https://elzero.org/javascript-smallest-number-in-array-elements/" target="blank">Link Of Exercise</a>
+    </div>
+    <script>
+      function getSmallestNumber(myArray) {
+        var numberArray = [];
+        var myArray = document.querySelector(".my-array");
+        var myEditedArray = JSON.parse(myArray.value);
+        var result = document.querySelector(".result");
+
+        for (let i = 0; i < myEditedArray.length; i++) {
+          if (typeof myEditedArray[i] === "number") {
+            numberArray.push(myEditedArray[i]);
+          }
+        }
+
+        // result.innerHTML = `The Smallest Number Of This Array Is '${Math.min(...numberArray)}'`;
+
+        // Another Method
+        result.innerHTML = `The Smallest Number Of This Array Is '${
+          numberArray.sort(function (a, b) {
+            return a - b;
+          })[0]
+        }'`;
+      }
+      // Test => [115, 20, 10, "A", "!", "@", 13, 1, 5, 2, "X", "C"]
+    </script>
+  </body>
+</html>
