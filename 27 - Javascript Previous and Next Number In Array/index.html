@@ -29,9 +29,9 @@
           array.value.includes(parseInt(number.value) + 1) !== false &&
           array.value.includes(parseInt(number.value) - 1) !== false
         ) {
-          result.innerHTML = `Founded, The Given Number Is ${number.value} & The Previous Number Is ${
+          result.innerHTML = `Founded, The Given Number Is "${number.value}" & The Previous Number Is "${
             parseInt(number.value) - 1
-          } & The Next Number Is ${parseInt(number.value) + 1}`;
+          }" & The Next Number Is "${parseInt(number.value) + 1}"`;
         } else {
           result.innerHTML = `Not Founded`;
         }

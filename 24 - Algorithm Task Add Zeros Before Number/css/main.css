@@ -1,6 +1,5 @@
 * {
   font-family: Arial, Tahoma;
-  font-size: 1vw;
   box-sizing: border-box;
 }
 .outline {
@@ -13,9 +12,36 @@
 .container {
   width: 100%;
   background-color: #e8f4fc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
+  padding: 11% 2%;
+  text-align: center;
+}
+input {
+  padding: 5%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  width: 80%;
+}
+button {
+  background-color: #06928a;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 5%;
+  width: 80%;
+  margin-bottom: 5%;
+}
+.result {
+  background-color: #fff;
+  width: 80%;
+  padding: 5%;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  line-height: 1.7;
 }
 .vid-link {
   background-color: #ccc;

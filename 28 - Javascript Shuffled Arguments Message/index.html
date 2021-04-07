@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="outline">
+      <div class="container">
+        <input
+          class="name"
+          type="text"
+          placeholder="Name 'Only Text'"
+          onkeydown="preventNumberInput(event)"
+          onkeyup="preventNumberInput(event)"
+        />
+        <input class="age" type="number" placeholder="Age 'Only Numbers'" />
+        <div class="job">
+          <span>Job Status :</span>
+          <input type="radio" id="job" name="job-status" value="true" />
+          <label for="working">Working</label>
+          <input type="radio" id="job" name="job-status" value="false" />
+          <label for="not-working">Not Working</label>
+        </div>
+        <button class="btn" onclick="statusUser();">Generate</button>
+        <div class="result"></div>
+      </div>
+    </div>
+    <div class="vid-link">
+      <a href="https://elzero.org/javascript-shuffled-arguments-message/" target="blank">Link Of Exercise</a>
+    </div>
+    <script>
+      function preventNumberInput(e) {
+        var keyCode = e.keyCode ? e.keyCode : e.which;
+        if ((keyCode > 47 && keyCode < 58) || (keyCode > 95 && keyCode < 107)) {
+          e.preventDefault();
+        }
+      }
+
+      function statusUser(a, b, c) {
+        var result = document.querySelector(".result");
+        var myString = document.querySelector(".name");
+        var myNumber = document.querySelector(".age");
+        var myRadios = document.querySelectorAll('input[name="job-status"]');
+        var myBolean;
+
+        for (let i = 0; i < myRadios.length; i++) {
+          if (myRadios[i].checked) {
+            myBolean = myRadios[i].value;
+            break;
+          }
+        }
+
+        if (myBolean === "true") {
+          myBolean = "Not Available For Hire";
+        } else if (myBolean === "false") {
+          myBolean = "Available For Hire";
+        } else {
+          myBolean = "";
+        }
+
+        console.log(myBolean);
+        if (myString.value === "" || myNumber.value === "" || myBolean === "") {
+          result.innerHTML = `Name or Age or Job Status Can't Be Empty`;
+        } else {
+          result.innerHTML = `Hello "${myString.value}", Your Age Is "${myNumber.value}", and You Are ${myBolean}`;
+        }
+      }
+
+      ////////////////////// Test From Console /////////////////////////
+      function status(a, b, c) {
+        // Check type of a
+        if (typeof a === "string") {
+          myString = a;
+        } else if (typeof a == "number") {
+          myNumber = a;
+        } else {
+          var myBolean = a;
+        }
+
+        // Check type of b
+        if (typeof b === "string") {
+          myString = b;
+        } else if (typeof b == "number") {
+          myNumber = b;
+        } else {
+          var myBolean = b;
+        }
+
+        // Check type of c
+        if (typeof c === "string") {
+          myString = c;
+        } else if (typeof c == "number") {
+          myNumber = c;
+        } else {
+          var myBolean = c;
+        }
+
+        // Check value of Bolean
+        if (myBolean !== true) {
+          myBolean = "Not Available For Hire";
+        } else {
+          myBolean = "Available For Hire";
+        }
+
+        console.log(`Hello ${myString}, Age Is ${myNumber}, ${myBolean}`);
+      }
+      status(true, "Mahmoud", 35);
+      status(35, "Mahmoud", true);
+      status("Mahmoud", false, 35);
+      status(false, 35, "Mahmoud");
+    </script>
+  </body>
+</html>
