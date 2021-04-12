@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="outline">
+      <div class="container">
+        <input class="my-number" type="number" placeholder="Type Number" />
+        <button class="btn" onclick="addCommaAndDot();">Add Comma and Dot</button>
+        <div class="result"></div>
+      </div>
+    </div>
+    <div class="vid-link">
+      <a href="https://elzero.org/javascript-comma-and-dots-in-number/" target="blank">Link Of Exercise</a>
+    </div>
+    <script>
+      function addCommaAndDot(num) {
+        var num = document.querySelector(".my-number");
+        let userResult = document.querySelector(".result");
+        let myString = num.value;
+
+        if (myString.length === 7 || myString.length === 8 || myString.length === 9) {
+          let myStringWithDot = myString.substr(0, myString.length - 3) + "." + myString.substr(-3);
+          userResult.innerHTML =
+            myStringWithDot.substr(0, myStringWithDot.length - 7) + "," + myStringWithDot.substr(-7);
+        } else if (myString.length === 4 || myString.length === 5 || myString.length === 6) {
+          userResult.innerHTML = myString.substr(0, myString.length - 3) + "." + myString.substr(-3);
+        } else if (myString.length <= 3) {
+          userResult.innerHTML = myString;
+        }
+      }
+    </script>
+  </body>
+</html>
