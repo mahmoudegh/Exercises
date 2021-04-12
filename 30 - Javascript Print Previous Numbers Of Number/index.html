@@ -33,7 +33,7 @@
             result.push(num.value--);
           }
           num.value = "";
-          userResult.innerHTML = result.toString().split(",").join("");
+          userResult.innerHTML = `The Previous Numbers are "${result.toString().split(",").join("")}"`;
         } else if (num.value > 10) {
           while (num.value > 0) {
             result.push(num.value--);
@@ -52,13 +52,13 @@
 
           result = [];
 
-          doubleNumb.forEach((c) => {
-            if (!result.includes(c)) {
-              result.push(c);
+          doubleNumb.forEach((el) => {
+            if (!result.includes(el)) {
+              result.push(el);
             }
           });
           num.value = "";
-          userResult.innerHTML = result.toString().split(",").join("");
+          userResult.innerHTML = `The Previous Even Numbers are "${result.toString().split(",").join("")}"`;
         }
       }
     </script>
