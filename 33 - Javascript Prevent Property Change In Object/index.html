@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="vid-link">
+      <a href="https://elzero.org/javascript-prevent-property-change-in-object/" target="blank">Link Of Exercise</a>
+    </div>
+    <script>
+      // The Main Object
+      const myObject = {
+        a: 1,
+        b: 2,
+        c: 3,
+      };
+
+      // Write Code Here To Prevent Changing Of Property C Value
+      // Object.freeze(myObject);
+
+      Object.defineProperty(myObject, "c", { writable: false });
+
+      myObject.c = 100;
+      console.log(myObject.c); // 3
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
