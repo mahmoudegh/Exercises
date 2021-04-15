@@ -14,14 +14,15 @@
     </div>
     <script>
       function getUniqueNumbers() {
-        // let numbers = [15.6, 2, 2, 2, 4, 5, true, true, 7, "A", 2, false, 2, 3, 8, 9];
-        let numbers = [15.6, 2, 2, 2, 4, 5, true, true, 7, "A", 2, false, 2, 8, 9];
+        let numbers = [15.6, 2, 2, 2, 4, 5, true, true, 7, "A", 2, false, 2, 3, 8, 9];
+        // let numbers = [15.6, 2, 2, 2, 4, 5, true, true, 7, "A", 2, false, 2, 8, 9];
 
         var noRepeatArray;
         var noStringArray = [];
 
         // [1] Remove Repeats
-        noRepeatArray = [...new Set(numbers)];
+        // noRepeatArray = [...new Set(numbers)];
+        noRepeatArray = numbers.filter((el, index) => numbers.indexOf(el) === index);
 
         // [2] Remove Srting
         for (let i = 0; i < noRepeatArray.length; i++) {
