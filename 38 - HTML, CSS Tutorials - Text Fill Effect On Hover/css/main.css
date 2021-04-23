@@ -1,0 +1,41 @@
+* {
+  font-family: Arial, Tahoma;
+  box-sizing: border-box;
+}
+.fill {
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30vw;
+  width: fit-content;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333;
+  position: relative;
+}
+.fill::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-text-fill-color: #ff5722;
+  transition: 0.6s;
+  overflow: hidden;
+  width: 0%;
+}
+.fill:hover:before {
+  width: 100%;
+}
+.vid-link {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  margin-top: 30px;
+}
+.vid-link a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}

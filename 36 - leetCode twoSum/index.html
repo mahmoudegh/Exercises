@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Exercises</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="vid-link">
+      <a href="https://leetcode.com/problems/two-sum/" target="blank">LeetCode</a>
+    </div>
+    <script>
+      var twoSum = function (nums, target) {
+        for (let i = 0; i < nums.length; i++) {
+          for (let x = i + 1; x < nums.length; x++) {
+            if (nums[i] + nums[x] === target) {
+              return [i, x];
+            }
+          }
+        }
+      };
+      console.log(twoSum([3, 2, 4], 6));
+    </script>
+  </body>
+</html>
