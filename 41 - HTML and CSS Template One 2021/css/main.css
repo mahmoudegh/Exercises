@@ -25,17 +25,32 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.slogon {
+  text-align: center;
+  margin-bottom: 80px;
+  width: 100%;
+}
+.slogon h1 {
+  font-size: 100px;
+  color: #ebeced;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.slogon p {
+  color: #797979;
+  font-size: 20px;
+  margin-top: -30px;
+}
 /* End Global Rules */
 
-/* Start Header */
 /* Start nav-bar */
 .nav-bar {
   padding: 20px;
-  height: 16vh;
 }
 .nav-bar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-bar .logo,
 .nav-bar .logo img {
@@ -77,7 +92,7 @@ body {
   height: 0;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #ddd transparent;
+  border-color: transparent transparent #f6f6f6 transparent;
   position: absolute;
   bottom: -15px;
   left: 5px;
@@ -110,10 +125,9 @@ body {
 /* Start Landing */
 .landing {
   background-image: url(../imgs/landing.jpg);
-  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 84vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,34 +147,190 @@ body {
   line-height: 1.8;
 }
 /* End Landing */
-/* Start Header */
 
 /* Start Features */
 .features {
   background-color: var(--section-background);
-  padding: var(--section-padding);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 .features .container {
   display: flex;
   justify-content: space-between;
 }
 .features .feat-box {
-  width: 28%;
+  width: 30%;
   text-align: center;
 }
 .features .feat-box i {
   color: var(--main-color);
   margin-bottom: 30px;
 }
-.features .feat-box h2 {
+.features .feat-box h3 {
   margin-bottom: 30px;
+  font-weight: 800;
 }
 .features .feat-box p {
   line-height: 1.8;
   color: #777;
   font-size: 17px;
 }
-@media screen and (max-width: 649px) {
+/* End Features */
+
+/* Start Services */
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.services .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services .first,
+.services .second,
+.services .third {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services .third {
+  position: relative;
+  align-items: center;
+  display: none;
+}
+.services .third::before {
+  content: "";
+  width: 30%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scaleY(1.3);
+}
+.services .third img {
+  position: absolute;
+  right: 50px;
+  height: 100%;
+  width: 70%;
+}
+.services .container .services-box {
+  display: flex;
+}
+.services .first .services-box:first-of-type,
+.services .second .services-box:first-of-type {
+  margin-bottom: 40px;
+}
+.services .container .services-box .icon {
+  margin-right: 30px;
+}
+.services .container .services-box .icon i {
+  color: var(--main-color);
+}
+.services .services-box .content h3 {
+  margin-bottom: 20px;
+}
+.services .services-box .content p {
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6;
+}
+/* End Services */
+
+/* Start Portfolio */
+.portfolio {
+  background-color: var(--section-background);
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.portfolio .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio .container .project {
+  width: 32%;
+  background-color: #fff;
+}
+.portfolio .container .project img {
+  width: 100%;
+}
+.portfolio .container .project .content {
+  background-color: #fff;
+  padding: 20px;
+}
+.portfolio .container .project .content p {
+  color: #777;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+/* End Portfolio */
+
+/* Start About */
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.about .container .photo {
+  width: 35%;
+  transform: scaleY(1.3);
+}
+.about .container .photo::before {
+  content: "";
+  width: 23%;
+  height: 100%;
+  background-color: #ebeced;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about .container .photo::after {
+  content: "";
+  width: 30%;
+  height: 80%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.about .container .photo img {
+  width: 70%;
+  position: absolute;
+  left: 20px;
+}
+.about .container .content {
+  width: 55%;
+  position: relative;
+}
+.about .container .content:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 55%;
+  height: 2px;
+  width: 40%;
+  background-color: var(--main-color);
+}
+.about .container .content p:first-of-type {
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 80px;
+}
+.about .container .content p:last-of-type {
+  line-height: 2;
+  color: #777;
+}
+/* End About */
+
+/* Media */
+@media screen and (max-width: 767px) {
   .features .container {
     display: block;
   }
@@ -170,13 +340,47 @@ body {
   .features .feat-box:not(:last-of-type) {
     margin-bottom: 70px;
   }
+  .slogon h1 {
+    font-size: 65px;
+  }
+  .slogon p {
+    font-size: 15px;
+  }
+  .services .container {
+    display: block;
+  }
+  .services .first,
+  .services .second {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .services .container .services-box {
+    display: block;
+    text-align: center;
+  }
+  .services .container .services-box .icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .services .services-box .content p {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .portfolio .container {
+    display: block;
+  }
+  .portfolio .container .project {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
-
-@media (min-width: 650px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
   .features .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   .features .feat-box {
     width: 45%;
@@ -184,8 +388,33 @@ body {
   .features .feat-box:not(:last-of-type) {
     margin-bottom: 70px;
   }
+  .portfolio .container {
+    flex-wrap: wrap;
+  }
+  .portfolio .container .project {
+    width: 49%;
+    margin-bottom: 20px;
+  }
 }
-/* End Features */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .services .third {
+    display: flex;
+  }
+  .services .first,
+  .services .second,
+  .services .third {
+    width: 30%;
+  }
+}
+/* Media */
 
 /* Start Link */
 .vid-link {
